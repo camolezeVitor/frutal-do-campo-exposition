@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+$primary: #1EBC73;
+$greenye: #A8DCC4;
+$dark-greenye: #73AF93;
+$focus: #FFA722;
+$background-a: #E3FFF2;
+$background-b: #C9EEDD;
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: $background-a;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Jost', sans-serif;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $background-b;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 20px
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #116e43;
+}
+/* ScrollBar */
+
+.container-text {
+  width: 80%;
+  padding: 20px;
+
+}
+
+.texto {
+  color: #061D03;
+  margin-top: 20px;
+}
+.cimg {
+  width: 70%;
+  height: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 3px dashed #061D03;
+}
+.img-container {
+  width: 100%;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  background-color: #1EBC73;
+  border: none;  margin: 20px!important;
+  border-radius: 5px;
+  width: 200px;
+}
+tr {
+  outline: none;
+  border: none;
+  margin: 20px!important;
+  border-radius: 10px;
+}
+td {
+  border: none;
+  margin: 20px!important;
+  text-align: center;
+}
+table {
+  border: none;
+  margin-top: 100px;
+}
+
+tr:nth-child(even) {
+background-color: #C9EEDD;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card-loja {
+  width: 300px;
+  background-color: #f6fefa;
+  height: 400px;
+  border: 3px solid #1EBC73;
+  border-radius: 10px;
+  transition: 0.5s;
+  align-items: center;
+  text-align: center;
+}
+.card-loja:hover {
+  translate: -5px -5px;
+  box-shadow: 5px 5px 3px #061d033f;
+}
+
+.b-img-a {
+  border-radius: 10px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #94c5af;
+  background-color: #c8e9da;
+  box-shadow: 3px 3px 3px #061d0352;
+  transition: 0.3s;
+}
+input:hover {
+  border-color: $primary;
+}
+input:focus {
+  border-color: #FFA722;
+}
+
+.double-image {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dbl-img {
+  width: 40%;
+  border-radius: 10px;
+  border: 3px dashed #061D03;
+}

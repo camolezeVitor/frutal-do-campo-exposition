@@ -1,0 +1,21 @@
+<div class='container-text' [innerHTML]="htmlElementToBeRead.contacts">
+
+</div>
+
+<div class='container-text'>
+  <h2 class='texto'>Nos Contate</h2>
+  <p>Abaixo você tem como contatar algum numero citado acima, é extremamente improvável que algum desses numeros te responda, entretanto não custa tentar, afinal o serviço é completamente pago e o dinheiro vem exclusivamente do seu bolso :)</p>
+  <div class='input-grouping'>
+    <input type="text" placeholder="Seu Numero">
+    <input type="text" placeholder="Seu Nome">
+    <input type="text" placeholder="Numero à ser ligado">
+  </div>
+  <div class='input-grouping'>
+    <input type="text" placeholder="Numero do Cartão">
+    <input type="text" placeholder="Código de Segurança">
+    <input type="text" placeholder="Data de Vencimento">
+  </div>
+  <div class="input-grouping">
+    <button (click)="avisoAoUsuario()" class="nav-button"><i class="fa-solid fa-phone"></i> &nbsp; Ligar</button>
+  </div>
+</div>

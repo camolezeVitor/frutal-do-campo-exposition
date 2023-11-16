@@ -1,0 +1,12 @@
+<div class="nav-bar-group-container">
+  <div class="nav-bar-group">
+    <div class="nav-bar-content">
+      <button *ngFor="let botao of listaDeBotoes"
+      class="nav-button"
+      [ngClass]="{'nav-button-active': (router.url == botao.route)}"
+      [innerHtml]="botao.icon"
+      (click)="alterarARota(botao.route)">
+      </button>
+    </div>
+  </div>
+</div>

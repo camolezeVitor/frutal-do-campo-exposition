@@ -1,0 +1,10 @@
+<div class="header-box">
+  <button class="btn-header" (click)="voltarAPaginaInicial()">
+    <i class="fa-solid fa-arrow-left fa-xl"></i>
+  </button>
+  <p class="h3-text texting"> {{ identificacaoGlobalDePosicao[identificadorDeLadoDoFrutal] }} | </p>
+  <h2 class="h1-text texting">{{router.url.replaceAll('/', '').replaceAll(regExp, '') | titlecase }}</h2>
+</div>
+<div class="gradient-line">
+
+</div>

@@ -1,0 +1,14 @@
+<main class="full-bd">
+  <div class="content">
+    <div class="header-container">
+      <app-header [identificadorDeLadoDoFrutal]="identificadorDaParteDeFrutalPai"></app-header>
+    </div>
+    <div class="component-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="nav-bar-container align-center">
+    <app-nav-bar [identificadorDeArea]="identificadorDaParteDeFrutalPai"></app-nav-bar>
+  </div>
+</main>
+
